@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure File Sharing System</title>
+</head>
+<body>
+    <h2>Secure File Sharing System</h2>
+
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload & Encrypt</button>
+    </form>
+
+    <h3>Available Files</h3>
+    <ul>
+        {% for file in files %}
+            <li>
+                {{ file }} - <a href="/download/{{ file }}">Download (Decrypted)</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Uploads and any stored files
+uploads/
+
+# Persistent secret key file
+secret.key
+FILE_KEY_B64.env
+
+# VSCode settings
+.vscode/
