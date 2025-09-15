@@ -20,7 +20,7 @@ It is a secure file upload & download portal built with Flask and AES/Fernet enc
 🎯 Learning Outcomes
 
 Through this project, I was able to:
--Gain practical experience in implementing symmetric encryption web application.
--Understand how to combine web development and cybersecurity practices to build secure systems.
--Apply secure coding standards, including input validation and safe file handling with secure_filename.
--Manage sensitive files effectively using .gitignore, ensuring that keys and uploaded files remain private.
+- Gain practical experience in implementing symmetric encryption web application.
+- Understand how to combine web development and cybersecurity practices to build secure systems.
+- Apply secure coding standards, including input validation and safe file handling with secure_filename.
+- Manage sensitive files effectively using .gitignore, ensuring that keys and uploaded files remain private.
